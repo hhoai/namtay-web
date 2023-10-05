@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const MENU_ITEMS = [
   {
     title: "Mẫu trang",
@@ -17,11 +19,24 @@ const MENU_ITEMS = [
   },
 ];
 
+// 5468e7
+
 function Menu() {
   return (
-    <div className="font-semibold text-[#8B8B8B]">
+    <div className="font-semibold text-[#8B8B8B] text-lg flex">
       {MENU_ITEMS.map((item) => {
-        return <a href={item.to} className="px-10">{item.title}</a>;
+        return <NavLink
+        to={item.to}
+        style={({ isActive, isPending }) => {
+          return {
+            // padding: isPending ? "0px 10px" : "0px",
+            color: isActive ? "#5468e7" : "#8b8b8b",
+          };
+        }}
+        className="px-10"
+      >
+        {item.title}
+      </NavLink>;
       })}
     </div>
   );
