@@ -1,0 +1,30 @@
+span {
+  background-image: linear-gradient(#f8d3d3, #f8d3d3);
+  background-size: 100% 40%;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  transition: all 0.3s linear 0s;
+}
+
+span:hover {
+  background-size: 100% 100%;
+}
+
+.signIn::before {
+  content: "";
+  height: 1px;
+  width: 20%;
+  background: #c1c1c1;
+  position: absolute;
+  top: calc(50% + 2px);
+  left: -10px;
+}
+.signIn::after {
+  content: "";
+  height: 1px;
+  width: 20%;
+  background: #c1c1c1;
+  position: absolute;
+  top: calc(50% + 2px);
+  right: -10px;
+}

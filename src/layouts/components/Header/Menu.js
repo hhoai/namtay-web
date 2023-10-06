@@ -28,10 +28,12 @@ function Menu() {
         style={({ isActive, isPending }) => {
           return {
             // padding: isPending ? "0px 10px" : "0px",
-            color: isActive ? "#5468e7" : "#8b8b8b",
+            color: isActive ? "#5468e7" : "",
+            textDecoration: isActive ? "underline solid" : "",
+            textUnderlineOffset: isPending ? "" : "6px",
           };
         }}
-        className="px-10"
+        className="px-10 hover:text-[#5468e7]"
       >
         {item.title}
       </NavLink>;
