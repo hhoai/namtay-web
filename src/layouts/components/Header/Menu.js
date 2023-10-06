@@ -19,8 +19,6 @@ const MENU_ITEMS = [
   },
 ];
 
-// 5468e7
-
 function Menu() {
   return (
     <div className="font-semibold text-[#8B8B8B] text-lg flex">
