@@ -8,7 +8,7 @@ function Copyright() {
         <p>@2021 NTay., JSC. All rights reserved</p>
       </div>
       <div >
-        <a href="/" className="flex items-center text-lg font-bold gap-2">
+        <a href="/" className="flex items-center text-lg font-bold gap-2" >
           <TiArrowUpThick className=""/>
           <p>Quay về đầu trang</p>
         </a>

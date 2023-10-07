@@ -1,4 +1,4 @@
-span {
+.hover {
   background-image: linear-gradient(#f8d3d3, #f8d3d3);
   background-size: 100% 40%;
   background-position: 0 100%;
@@ -6,7 +6,7 @@ span {
   transition: all 0.3s linear 0s;
 }
 
-span:hover {
+.hover:hover {
   background-size: 100% 100%;
 }
 

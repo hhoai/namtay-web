@@ -1,6 +1,6 @@
 function Template() {
   return ( 
-    <div>Template</div>
+    <div className="relative top-28">Template</div>
    );
 }
 

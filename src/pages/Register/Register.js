@@ -20,7 +20,7 @@ const form = [
   },
   {
     placeholder: "Email",
-    type: "text",
+    type: "email",
   },
   {
     placeholder: "Số điện thoại",
@@ -46,7 +46,7 @@ function Register() {
         <div>
           <p className="text-lg font-medium">
             Bạn đã có tài khoản?{" "}
-            <span className="text-[var(--primary)] font-bold">
+            <span className="text-[var(--primary)] font-bold hover">
               <a href="/login">Đăng nhập ngay!</a>
             </span>
           </p>
@@ -85,11 +85,11 @@ function Register() {
             <p className="text-lg">
               Tôi đồng ý với{" "}
               <a href="/hop-dong-dich-vu">
-                <span className="font-semibold">Hợp đồng</span>
+                <span className="font-semibold hover">Hợp đồng</span>
               </a>
               , các{" "}
               <a href="/chinh-sach">
-                <span className="font-semibold">
+                <span className="font-semibold hover">
                   Điều khoản sử dụng và Chính sách bảo mật
                 </span>
               </a>{" "}

@@ -16,7 +16,7 @@ const btn = [
 const form = [
   {
     placeholder: "Email",
-    type: "text",
+    type: "email",
   },
   {
     placeholder: "Mật khẩu",
@@ -34,7 +34,7 @@ function LogIn() {
         <div>
           <p className="text-lg font-medium">
             Bạn chưa có tài khoản?{" "}
-            <span className="text-[var(--primary)] font-bold">
+            <span className="text-[var(--primary)] font-bold hover">
               <a href="/register">Đăng kí ngay!</a>
             </span>
           </p>
@@ -72,7 +72,7 @@ function LogIn() {
             Đăng nhập
           </button>
           <a href="/quen-mat-khau">
-            <span className="text-lg font-medium mb-5">Quên mật khẩu?</span>
+            <span className="text-lg font-medium mb-5 hover">Quên mật khẩu?</span>
           </a>
         </div>
         <div>
