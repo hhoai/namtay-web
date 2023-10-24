@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 :root {
-  --primary: #0f1e94;
+  --primary: #D9346E;
   --black: #000;
   --white: #fff;
   --text-color: #161823;
@@ -34,7 +34,7 @@ html *::-webkit-scrollbar {
 
 html *::-webkit-scrollbar-thumb {
   /* border-radius: 2px; */
-  background-color:  #0f1e94;
+  background-color:  #d9346e;
 }
 
 html *::-webkit-scrollbar-track {

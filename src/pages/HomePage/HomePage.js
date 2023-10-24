@@ -2,6 +2,7 @@ import Intro from "./Intro";
 import Banner from "./Banner";
 import Description from "./Description";
 import SlideShow from "./SlideShow";
+import User from "./User";
 
 import "./HomePage.css";
 
@@ -13,6 +14,7 @@ function HomePage() {
       <Banner />
       <Description />
       <SlideShow />
+      <User/>
     </div>
   );
 }

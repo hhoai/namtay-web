@@ -68,7 +68,7 @@ function LogIn() {
               />
             ))}
           </div>
-          <button className="w-[100%] rounded-xl text-[var(--white)] text-xl font-bold bg-[#1325b9] py-6 mb-5">
+          <button className="w-[100%] rounded-xl text-[var(--white)] text-xl font-bold bg-[var(--primary)] py-6 mb-5">
             Đăng nhập
           </button>
           <a href="/quen-mat-khau">
@@ -89,4 +89,4 @@ function LogIn() {
 
 export default LogIn;
 
-// style span :
+
