@@ -6,7 +6,7 @@ const MENU_ITEMS = [
     to: "/",
   },
   {
-    title: "Mẫu trang",
+    title: "Thiệp cưới",
     to: "/themes",
   },
   {
@@ -14,7 +14,7 @@ const MENU_ITEMS = [
     to: "/pricing",
   },
   {
-    title: "Bài viết",
+    title: "Blog cưới",
     to: "/blog",
   },
 ];
