@@ -2,7 +2,7 @@ import config from '../config';
 
 import Home from '../pages/HomePage/HomePage.js';
 import Themes from '../pages/Themes/Themes.js';
-import Affiliate from '../pages/Affiliate/Affiliate.js';
+import Contact from '../pages/Contact/Contact.js';
 import Pricing from '../pages/Pricing/Pricing.js';
 import Blog from '../pages/Blog/Blog.js';
 
@@ -20,8 +20,8 @@ const publicRoutes = [
     component: Themes,
   },
   {
-    path: config.routes.affiliate,
-    component: Affiliate,
+    path: config.routes.contact,
+    component: Contact,
   },
   {
     path: config.routes.pricing,

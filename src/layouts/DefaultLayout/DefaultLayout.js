@@ -1,4 +1,5 @@
 import Header from '../components/Header/Header.js';
+import Button from '../components/Button.js';
 import Footer from '../components/Footer/Footer.js';
 
 function DefaultLayout({children}) {
@@ -6,6 +7,7 @@ function DefaultLayout({children}) {
     <>
       <Header/>
       {children}
+      <Button/>
       <Footer/>
     </>
    );

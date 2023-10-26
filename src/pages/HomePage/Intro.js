@@ -1,4 +1,5 @@
 import { HiChevronDoubleDown } from "react-icons/hi";
+import { animateScroll as scroll } from "react-scroll";
 
 
 const INTRO = [
@@ -28,37 +29,42 @@ const INTRO = [
   },
 ];
 
+const scrollTo = () => {
+  scroll.scrollTo(800);
+}
+
 function Intro() {
   return (
-    <div className="relative pr-10">
+    <div className="relative pr-10 w-[var(--default-layout-width)] m-auto">
       <div className="mb-10 p-[50px_20px]">
         <div className="flex justify-between my-5">
-          <div className="w-[50%] flex flex-col">
-            <h4 className="text-[64px] leading-none font-bold w-[575px] mb-6">
-              Trang cưới điện tử{" "}
-              <span className="text-[#f73481]">mừng cưới</span> online
+          <div className="flex flex-col">
+            <h4 className="text-[40px] leading-[60px] font-bold">
+              Trải nghiệm độc đáo:<br/>
+              Trang cưới điện tử online
             </h4>
-            <p className="text-xl mb-12">
+              <p className="text-[var(--primary)] text-[40px] leading-[54px] font-bold">Tình yêu - Sáng tạo - Không giới hạn</p> 
+            <p className="mb-12 w-[60%] text-xl font-semibold leading-[30px]">
               Tạo ngay các trang web cưới dạng landing page để có trải nghiệm
               nhanh hơn, đẹp hơn, tiện lợi hơn và… nhiều lộc hơn.
             </p>
             <a
               href="/themes"
-              className="text-[var(--white)] text-lg font-bold bg-[var(--primary)] py-6 px-12 border-2 border-solid border-black rounded-xl w-fit"
+              className="text-[var(--white)] text-lg font-bold bg-[var(--primary)] py-6 px-12 rounded-xl w-fit"
             >
               Tạo ngay
             </a>
-            <a
-              href="#intro"
+            <button
+              onClick={scrollTo}
               className="flex items-center text-normal text-[#606060] text-base mt-40"
             >
               <div className="bg-[#f73481] rounded-full p-2 border-[1px] border-black border-solid mr-3">
                 <HiChevronDoubleDown className="text-xl text-black bounce" />
               </div>
               Cuộn xuống
-            </a>
+            </button>
           </div>
-          <video
+          {/* <video
             id="video"
             width="600"
             src="./img/HomePage/video1.mp4"
@@ -66,7 +72,7 @@ function Intro() {
             controls
             autoPlay
             loop
-          ></video>
+          ></video> */}
         </div>
       </div>
       <div id="intro">

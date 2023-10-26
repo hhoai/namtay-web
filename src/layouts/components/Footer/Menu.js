@@ -1,6 +1,10 @@
 const MENU = [
   {
-    title: "Tạo trang",
+    title: "Về chúng tôi",
+    to: "/ve-chung-toi",
+  },
+  {
+    title: "Tạo thiệp cưới",
     to: "/themes",
   },
   {
@@ -8,31 +12,25 @@ const MENU = [
     to: "/huong-dan-tao-thiep",
   },
   {
-    title: "Đại lý",
-    to: "/affiliate",
-  },
-  {
-    title: "Blog cưới",
+    title: "FAQ",
     to: "/blog",
   },
   {
-    title: "Về nắm tay",
-    to: "/ve-chung-toi",
+    title: "Liên hệ",
+    to: "/contact",
   },
-  {
-    title: "Điều khoản & chính sách",
-    to: "/chinh-sach-su-dung",
-  },
+  // {
+  //   title: "Điều khoản & chính sách",
+  //   to: "/chinh-sach-su-dung",
+  // },
 ];
 
 function Menu() {
   return (
-    <div className="flex flex-col content-end items-end">
-      <a href="/" className="mb-5 text-right w-fit">
-        <img src="./img/logo-white.svg" alt="logo" className="" />
-      </a>
-      {MENU.map((item) => (
-        <a href={item.to} className="mb-5 text-xl font-bold hover:underline">
+    <div className="flex flex-col content-end">
+      <p className="mb-7 text-xl text-[#252B42] font-bold">Khám phá</p>
+      {MENU.map((item, key) => (
+        <a href={item.to} className="mb-4 text-base font-bold hover:underline">
           {item.title}
         </a>
       ))}

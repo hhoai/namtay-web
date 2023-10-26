@@ -56,7 +56,7 @@ function Description() {
         </div>
       </div>
       <div id="intro">
-      {INTRO.map((item) => {
+      {INTRO.map((item, key) => {
         return (
           <div className="flex items-center justify-between my-5 p-[50px_20px]">
             <div className="w-[50%]">

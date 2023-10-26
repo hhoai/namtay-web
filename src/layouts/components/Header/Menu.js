@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom";
 
 const MENU_ITEMS = [
   {
+    title: "Trang chủ",
+    to: "/",
+  },
+  {
     title: "Mẫu trang",
     to: "/themes",
   },
   {
     title: "Biểu phí",
     to: "/pricing",
-  },
-  {
-    title: "Đại lí",
-    to: "/affiliate",
   },
   {
     title: "Bài viết",
@@ -21,19 +21,19 @@ const MENU_ITEMS = [
 
 function Menu() {
   return (
-    <div className="font-semibold text-[#8B8B8B] text-lg flex">
-      {MENU_ITEMS.map((item) => {
+    <div className="font-semibold text-[#8B8B8B] text-base flex">
+      {MENU_ITEMS.map((item, key) => {
         return <NavLink
         to={item.to}
         style={({ isActive, isPending }) => {
           return {
             // padding: isPending ? "0px 10px" : "0px",
-            color: isActive ? "#5468e7" : "",
+            color: isActive ? "var(--primary)" : "",
             textDecoration: isActive ? "underline solid" : "",
             textUnderlineOffset: isPending ? "" : "6px",
           };
         }}
-        className="px-10 hover:text-[#5468e7]"
+        className="px-5 hover:text-[var(--primary)]"
       >
         {item.title}
       </NavLink>;
