@@ -1,6 +1,6 @@
 function Contact() {
   return ( 
-    <div>affiliate</div>
+    <div></div>
    );
 }
 
